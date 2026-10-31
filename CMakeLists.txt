@@ -18,14 +18,14 @@ include(Catch)
 catch_discover_tests(jeu_de_la_vie_test)
 
 # Pour faire la question 6
-#add_executable(jeu_de_la_vie_texte grille.cpp main_texte.cpp)
-#target_compile_features(jeu_de_la_vie_texte PUBLIC cxx_std_17)
-#if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-#	target_compile_options(jeu_de_la_vie_texte PRIVATE -Wall -Wpedantic)
-#endif()
+add_executable(jeu_de_la_vie_texte grille.cc main_texte.cc)
+target_compile_features(jeu_de_la_vie_texte PUBLIC cxx_std_17)
+if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+	target_compile_options(jeu_de_la_vie_texte PRIVATE -Wall -Wpedantic)
+endif()
 
 # Pour faire la question 7
-#add_executable(jeu_de_la_vie_sfml grille.cpp affichage_sfml.cc main_sfml.cc)
+#add_executable(jeu_de_la_vie_sfml grille.cc affichage_sfml.cc main_sfml.cc)
 #target_link_libraries(jeu_de_la_vie_sfml PRIVATE sfml-graphics sfml-window sfml-system)
 #target_compile_features(jeu_de_la_vie_sfml PRIVATE cxx_std_17)
 #if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
