@@ -18,9 +18,9 @@ Les cases hors de la grille sont considérées comme mortes.
 | Fichier | Rôle |
 |---|---|
 | `grille.hh` | déclaration de la classe `grille` et des types `etatcellule`, `structure`, `coordonnee` |
-| `grille.cpp` | implémentation des méthodes |
-| `main.cpp` | tests unitaires Catch2 (fournis) |
-| `main_texte.cpp` | programme principal en mode texte (question 6) |
+| `grille.cc` | implémentation des méthodes |
+| `main.cc` | tests unitaires Catch2 (fournis) |
+| `main_texte.cc` | programme principal en mode texte (question 6) |
 | `CMakeLists.txt` | configuration de la compilation |
 
 ## Classe `grille`
