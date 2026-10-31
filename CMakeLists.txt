@@ -8,7 +8,7 @@ list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
 enable_testing()
 
 # Pour faire les premières questions.
-add_executable(jeu_de_la_vie_test grille.cpp main.cpp)
+add_executable(jeu_de_la_vie_test grille.cc main.cc)
 target_compile_features(jeu_de_la_vie_test PUBLIC cxx_std_17)
 if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
         target_compile_options(jeu_de_la_vie_test PRIVATE -Wall -Wpedantic)
